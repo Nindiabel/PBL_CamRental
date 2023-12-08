@@ -1,0 +1,181 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #efd6d6;
+  color: #010101;
+  font-family: "Montserrat", sans-serif;
+}
+
+.material-icons-outlined {
+  vertical-align: middle;
+  line-height: 1px;
+}
+
+.text-primary {
+  color: #666666;
+}
+
+.text-blue {
+  color: rgb(71, 12, 12);
+}
+
+.text-red {
+  color: #cc3c43;
+}
+
+.text-green {
+  color: rgb(71, 12, 12);
+}
+
+.text-orange {
+  color: rgb(71, 12, 12);
+}
+
+.font-weight-bold {
+  font-weight: 600;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 260px 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 3fr;
+  grid-template-areas:
+    "sidebar header header header"
+    "sidebar main main main";
+  height: 100vh;
+}
+  
+  /* ---------- HEADER ---------- */
+  
+  .header {
+    grid-area: header;
+    height: 50px;
+    background-color: #512020;
+    display: flex;
+    justify-content: space-between; /* Mengatur jarak antara elemen header-left dan header-right */
+    align-items: center; /* Mengubah justify-content ke flex-end */
+    padding: 0 30px;
+    box-shadow: 0 6px 7px -4px rgba(0, 0, 0, 0.2);
+    width: 96%; /* Menggunakan unit persen (%) untuk lebar agar mengisi layar */
+  }
+  .header .header-left p {
+    margin: 5; /* Menghilangkan margin bawaan dari elemen p */
+    color: #fd9797; /* Memberikan warna teks */
+    font-weight: bold; /* Membuat teks lebih tebal */
+    font-size: 30px; /* Mengatur ukuran teks */
+  }
+  
+  .header-right{
+    gap: 50px;
+    align-items: center;
+    display: flex;
+  }
+  
+  .menu-icon {
+    cursor: pointer;
+    display: none;
+  }
+  
+  
+  /* ---------- SIDEBAR ---------- */
+  
+  #sidebar {
+    grid-area: sidebar;
+    width: 200px;
+    min-width: 200px; /* Menambahkan min-width agar tidak menyusut terlalu kecil */
+    height: 155vh;
+    background-color: #240101;
+    color: #f67a7a;
+    overflow-y: auto;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+  }
+  
+  .close{
+    cursor: pointer;
+  }
+  
+  .sidebar{
+    transition: all 1s ease;
+  }
+  
+  .sidebar-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px 20px 20px;
+    margin-bottom: 30px;
+  }
+  
+  .sidebar-title > span {
+    display: none;
+  }
+  
+  .sidebar-brand {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  .sidebar-list {
+    padding: 0;
+    margin-top: 15px;
+    list-style-type: none;
+  }
+  
+  .sidebar-list-item {
+    padding: 20px 20px 20px 20px;
+  }
+  
+  .sidebar-list-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+  }
+  
+  .sidebar-list-item > a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  .sidebar-responsive {
+    display: inline !important;
+    position: absolute;
+    /*
+      the z-index of the ApexCharts is 11
+      we want the z-index of the sidebar higher so that
+      the charts are not showing over the sidebar 
+      on small screens
+    */
+    z-index: 12 !important;
+  }
+  .btn{
+    padding: .5rem;
+    border: none;
+    border-radius: 10px;
+    font-size: .9rem;
+    background-color: #ef2d10;
+    color: white;
+    cursor: pointer;
+ }
+ .submenu {
+  list-style: none;
+  padding: 0;
+  display: none;
+  background-color: #240101; /* Warna latar belakang submenu */
+  border: 1px solid #240101; /* Garis batas submenu */
+}
+
+.submenu li {
+  padding: 8px 12px;
+}
+
+.submenu li a {
+  text-decoration: none;
+  color: #fffdfd; /* Warna teks submenu */
+  display: block;
+}
+
+.submenu li a:hover {
+  background-color: #fdc8c87e; /* Warna latar belakang saat hover */
+}

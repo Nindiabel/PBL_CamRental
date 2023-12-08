@@ -1,0 +1,74 @@
+body {
+  font-family: Arial, sans-serif;
+  background: rgb(52,1,1);
+  background: linear-gradient(61deg, rgba(52,1,1,1) 0%, rgba(137,15,15,1) 50%, rgba(79,10,10,1) 100%);
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: rgb(255, 254, 254);
+  text-align: center;
+  margin-top: 20px;
+}
+
+form {
+  width: 50%;
+  margin: 20px auto; /* Memberikan sedikit margin pada bagian atas form */
+  background: rgb(253, 170, 170);
+  background: linear-gradient(342deg, rgb(253, 170, 170) 0%, rgb(253, 170, 170) 100%);
+  padding: 20px;
+  color: rgb(10, 10, 10);
+  border-radius: 8px; /* Border radius untuk form */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Shadow untuk efek kedalaman */
+}
+
+label {
+  font-weight: bold;
+}
+
+label, input, select {
+  display: block;
+  margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+select {
+  width: calc(100% - 24px); /* Agar elemen input dan select lebih lebar */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #5A1313;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+  background-color:  #C02323;
+}
+.btn {
+  display: inline-block;
+  padding: 8px ; /* Sesuaikan padding sesuai dengan kebutuhan */
+  background-color: #5A1313;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none; /* Hilangkan underline pada link */
+}
+
+.btn:hover {
+  background-color: #C02323;
+}

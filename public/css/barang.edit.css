@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background: rgb(52,1,1);
+    background: linear-gradient(61deg, rgba(52,1,1,1) 0%, rgba(137,15,15,1) 50%, rgba(79,10,10,1) 100%);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+.card {
+width: 80%;
+max-width: 500px;
+margin: 50px auto;
+background-color: red; /* Mengubah warna latar belakang menjadi abu-abu */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+border-radius: 15px;
+padding: 30px;
+}
+
+/* Judul form */
+.card h2 {
+text-align: center;
+margin-bottom: 30px;
+color: #333;
+}
+
+/* Label input */
+label {
+font-weight: bold;
+color: #555;
+}
+/* Input fields */
+.form-control {
+width: 100%;
+padding: 10px;
+margin-bottom: 20px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+/* Tombol Simpan */
+.btn-primary {
+display: inline-block;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+background-color: #711212;
+color: #fff;
+text-align: center;
+text-decoration: none;
+transition: background-color 0.3s ease;
+}
+
+/* Hover pada tombol */
+.btn-primary:hover {
+background-color: #a30000;
+}
+
+/* Tombol Kembali */
+.btn-warning {
+display: inline-block;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+background-color: #711212;
+color: #fff;
+text-align: center;
+text-decoration: none;
+transition: background-color 0.3s ease;
+}
+
+/* Hover pada tombol Kembali */
+.btn-warning:hover {
+background-color: #a30000;
+}
+h2 {
+text-align: center;
+margin-top: 60px;
+color: white;
+font-size: 30px;
+}
+.form-group {
+margin-bottom: 3px; 
+}
